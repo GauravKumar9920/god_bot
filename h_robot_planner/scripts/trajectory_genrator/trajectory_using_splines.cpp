@@ -313,7 +313,7 @@ This module generates a smooth 2D trajectory through a set of waypoints using a 
 ## Build & run (ad-hoc)
 ```bash
 # Build just the demo without ROS build system
-cd ~/HOST/personal_ws/src/h_robot_planner/scripts/trajectory_genrator
+cd ~/HOST/personal_ws/src/god_bot/h_robot_planner/scripts/trajectory_genrator
 g++ -O2 -std=c++17 trajectory_using_splines.cpp -o spline_demo
 ./spline_demo
 # -> writes /tmp/trajectory_spline.csv

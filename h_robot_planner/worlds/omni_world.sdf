@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <include>
-  <uri>file:///home/docker/HOST/personal_ws/src/h_robot_planner/models/omni_bot/model.sdf</uri>
+  <uri>file:///home/docker/HOST/personal_ws/src/god_bot/h_robot_planner/models/omni_bot/model.sdf</uri>
   <name>omni_bot</name>
   <pose>0 0 0 0 0 0</pose>
 </include>

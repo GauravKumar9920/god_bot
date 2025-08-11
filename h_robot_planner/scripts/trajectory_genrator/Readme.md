@@ -1,3 +1,4 @@
+```cpp
 #pragma once
 // -----------------------------------------------------------------------------
 // Catmull–Rom / Cardinal spline (2D) utilities — header-only, no deps
@@ -177,6 +178,7 @@ inline void write_csv(const std::string& path, const std::vector<Sample>& S){
 #include <vector>
 #include <cmath>
 #include <cassert>
+```
 
 // =============================================================
 // Trajectory generation over a Catmull–Rom (centripetal) spline
@@ -197,6 +199,7 @@ inline void write_csv(const std::string& path, const std::vector<Sample>& S){
 // Output: CSV of (x,y,theta,s) and simple console checks.
 // =============================================================
 
+```cpp
 using namespace hmpc;
 
 static void unit_tests(){
@@ -258,6 +261,9 @@ int main(int argc, char** argv){
     std::cout << "CSV written to /tmp/trajectory_spline.csv\n";
     return 0;
 }
+```
+
+```python
 #!/usr/bin/env python3
 import csv
 import math
@@ -292,6 +298,7 @@ plt.title('Spline Trajectory')
 plt.xlabel('x [m]')
 plt.ylabel('y [m]')
 plt.show()
+```
 # Trajectory Generator (Catmull–Rom Spline)
 
 This module generates a smooth 2D trajectory through a set of waypoints using a **Catmull–Rom (cardinal) spline** with **centripetal** parameterization (alpha = 0.5). It outputs sampled positions, tangents (for headings), and approximate arc length, and it can resample to equal arc-length spacing. The result is ideal as input to a holonomic MPC tracker.
@@ -314,7 +321,7 @@ This module generates a smooth 2D trajectory through a set of waypoints using a 
 ## Build & run (ad-hoc)
 ```bash
 # Build just the demo without ROS build system
-cd ~/HOST/personal_ws/src/h_robot_planner/scripts/trajectory_genrator
+cd ~/HOST/personal_ws/src/god_bot/h_robot_planner/scripts/trajectory_genrator
 g++ -O2 -std=c++17 trajectory_using_splines.cpp -o spline_demo
 ./spline_demo
 # -> writes /tmp/trajectory_spline.csv
